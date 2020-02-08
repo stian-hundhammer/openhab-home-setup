@@ -1,0 +1,5 @@
+sitemap default label="My first sitemap"
+{
+    Switch item=Presence_Mobile_Stian label="Stians mobil og fiskeslo"
+    Switch item=Wallplug_Oven_Ada label="Wallplug TV"
+}

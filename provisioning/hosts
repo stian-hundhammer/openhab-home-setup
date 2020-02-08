@@ -1,0 +1,2 @@
+[openhab-server]
+openhab ansible_connection=ssh ansible_ssh_user=openhabian

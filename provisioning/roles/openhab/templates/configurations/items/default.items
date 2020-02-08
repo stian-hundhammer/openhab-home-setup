@@ -1,0 +1,3 @@
+Switch Presence_Mobile_Stian "Johns Mobile og Fiskeslo!" <network> { channel="network:device:192_168_10_111:online" }
+
+Switch Wallplug_Oven_Ada "Adas Varmeovn med hest" <poweroutlet> { channel="zwave:device:95f5b506:node2:switch_binary" }

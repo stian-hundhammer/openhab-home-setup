@@ -1,0 +1,6 @@
+- hosts: openhab
+  become: no
+
+  roles:
+    - openhab
+

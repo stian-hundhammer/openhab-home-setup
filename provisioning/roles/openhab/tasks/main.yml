@@ -1,0 +1,18 @@
+#
+# main config file for openhab
+#
+
+- name: Copy items scripts
+  template:
+    src:  configurations/items/{{ item }}
+    dest: "{{ openhab_conf }}/items/{{ item }}"
+  with_items:
+  - default.items
+
+- name: Copy sitemaps scripts
+  template:
+    src:  configurations/sitemaps/{{ item }}
+    dest: "{{ openhab_conf }}/sitemaps/{{ item }}"
+  with_items:
+  - default.sitemap
+
