@@ -1,5 +1,69 @@
-sitemap default label="My first sitemap"
-{
-    Switch item=Presence_Mobile_Stian label="Stians mobil og fiskeslo"
-    Switch item=Wallplug_Oven_Ada label="Wallplug TV"
+sitemap default label="GV12" {
+    Frame label="Cellar" icon="cellar" {
+        Group item=C_LaundryRoom
+        Group item=C_Office
+        Group item=C_Hallway
+        Group item=C_Toilet
+        Group item=C_LivingRoom
+        Group item=C_StorageRoom
+    }
+
+    Frame label="First Floor" icon="firstfloor" {
+        Group item=FF_Entryway
+        Group item=FF_Wardrobe
+        Group item=FF_Hallway
+        Group item=FF_Corridor
+        Group item=FF_Kitchen
+        Group item=FF_Lounge
+        Group item=FF_LivingRoom
+        Group item=FF_Porch
+        Group item=FF_Toilet
+        Group item=FF_Dining
+    }
+
+    Frame label="Second Floor" icon="attic" {
+        Group item=F2_Hallway
+        Group item=F2_Library
+        Group item=F2_Balcony
+        Group item=F2_MasterBedroom
+        Group item=F2_Bathroom
+        Group item=F2_Stairwell
+        Group item=F2_AdaBedroom
+        Group item=F2_RasmusBedroom
+        Group item=F2_JorgenBedroom
+    }
+
+    Frame label="Attic" icon="attic" {
+        Group item=AT_Attic
+    }
+
+    Frame label="Outside" icon="garden" {
+        Group item=OU_Backyard
+        Group item=OU_FrontYard
+        Group item=OU_Garage
+    }
+
+    Frame {
+        Text label="Lys" icon="light" {
+            Default item=C_Office_Light label="Office"
+            Default item=C_LivingRoom_Light label="Living Room"
+            Default item=FF_LivingRoom_Light label="Living Room"
+        }
+
+        Text label="Oppvarming" icon="heating" {
+            Default item=F2_RasmusBedroom_Heating label="Rasmus_Bedroom"
+            Default item=F2_JorgenBedroom_Heating label="Jorgen_Bedroom"
+        }
+
+        Text label="Temperatur" icon="temperature" {
+            Default item=F2_RasmusBedroom_Temperature label="Rasmus_Bedroom"
+            Default item=F2_JorgenBedroom_Temperature label="Jorgen_Bedroom"
+        }
+
+        Text label="Presence" icon="network" {
+            Default item=Presence_Mobile_Stian label="Stian"
+            Default item=Presence_Mobile_Ingunn label="Ingunn"
+        }
+    }
+
 }

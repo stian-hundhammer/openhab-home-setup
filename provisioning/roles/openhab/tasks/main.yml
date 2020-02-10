@@ -16,3 +16,10 @@
   with_items:
   - default.sitemap
 
+- name: Copy rules scripts
+  template:
+    src:  configurations/rules/{{ item }}
+    dest: "{{ openhab_conf }}/rules/{{ item }}"
+  with_items:
+    - default.rules
+

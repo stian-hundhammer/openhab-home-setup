@@ -1,0 +1,6 @@
+//rule "Wallplug_Oven_Ada ON"
+//when
+//    Item Presence_Mobile_Stian changed from OFF to ON
+//then
+//    Wallplug_Oven_Ada.sendCommand(ON)
+//end
