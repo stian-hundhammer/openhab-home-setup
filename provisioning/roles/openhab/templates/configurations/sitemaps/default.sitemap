@@ -56,8 +56,14 @@ sitemap default label="GV12" {
         }
 
         Text label="Temperatur" icon="temperature" {
-            Default item=F2_RasmusBedroom_Temperature label="Rasmus_Bedroom"
-            Default item=F2_JorgenBedroom_Temperature label="Jorgen_Bedroom"
+            //Default item=FF_Dining_K1_Temperature label="Karnapp venstre"
+            //Default item=FF_Kitchen_Temperature label="Kjøkken"
+            Default item=FF_LivingRoom_Temperature label="Stue"
+
+            Default item=F2_AdaBedroom_Temperature label="Ada_Bedroom"
+            //Default item=F2_RasmusBedroom_Temperature label="Rasmus_Bedroom"
+            //Default item=F2_JorgenBedroom_Temperature label="Jorgen_Bedroom"
+
         }
 
         Text label="Presence" icon="network" {
