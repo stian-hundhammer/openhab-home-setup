@@ -2,6 +2,13 @@
 # main config file for openhab
 #
 
+- name: Copy things scripts
+  template:
+    src:  configurations/things/{{ item }}
+    dest: "{{ openhab_conf }}/things/{{ item }}"
+  with_items:
+    - millheat.things
+
 - name: Copy items scripts
   template:
     src:  configurations/items/{{ item }}
@@ -22,4 +29,3 @@
     dest: "{{ openhab_conf }}/rules/{{ item }}"
   with_items:
     - default.rules
-

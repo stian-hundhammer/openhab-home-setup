@@ -38,35 +38,21 @@ Group    OU_Garage                      "Garage"           <garage>             
 
 Group   Network                         "Network"           <network>           (Home)                              ["Network"]
 
-//Switch   C_Office_Light                 "Light"            <light>              (C_Office, gLight)                 ["Lighting", "Switchable"]   {channel=""}
-//Switch   C_LivingRoom_Light             "Light"            <light>              (C_LivingRoom, gLight)             ["Lighting", "Switchable"]   {channel=""}
 Switch   FF_LivingRoom_Light            "Light"            <light>              (FF_LivingRoom, gLight)            ["Lighting", "Switchable"]   {channel="zwave:device:95f5b506:node2:switch_binary"}
-//Number   F2_RasmusBedroom_Heating       "Heating"          <heating>            (F2_RasmusBedroom, gHeating)       ["HVAC"]                     {channel=""}
-//Number   F2_RasmusBedroom_Temperature   "Temperature"      <temperature>        (F2_RasmusBedroom, gTemperature)   ["Temperature"]              {channel=""}
-//Number   F2_JorgenBedroom_Heating       "Heating"          <heating>            (F2_JorgenBedroom, gHeating)       ["HVAC"]                     {channel=""}
-//Number   F2_JorgenBedroom_Temperature   "Temperature"      <temperature>        (F2_JorgenBedroom, gTemperature)   ["Temperature"]              {channel=""}
 
 Group:Switch:OR(ON, OFF)   gLight         "Light"         <light>         (Home)   ["Lighting", "Switchable"]
 Group:Number:AVG           gHeating       "Heating"       <heating>       (Home)   ["HVAC"]
 Group:Number:AVG           gTemperature   "Temperature"   <temperature>   (Home)   ["Temperature"]
 
-// move to network.items
+
+// move to network.items ?
 Switch Presence_Mobile_Stian "stian mobil online" <network> (Home, Network) { channel="network:pingdevice:192_168_10_111:online" }
 Switch Presence_Mobile_Ingunn "Ingunn mobil online" <network> (Home, Network) { channel="network:pingdevice:192_168_10_124:online" }
 
-//Switch Wallplug_Oven_Ada "Adas Varmeovn" <poweroutlet> { channel="zwave:device:95f5b506:node2:switch_binary" }
+// Millheat
+Number:Temperature FF_LivingRoom_Heating_CurrentTemperature    "Heater current [%.1f %unit%]"  <temperature> (FF_LivingRoom, gHeating) {channel="millheat:heater:home:millheat__ff_livingroom:currentTemperature"}
+Number:Temperature FF_LivingRoom_Heating_TargetTemperature    "Heater target [%.1f %unit%]"  <temperature> (FF_LivingRoom) {channel="millheat:heater:home:millheat__ff_livingroom:targetTemperature"}
+Switch FF_LivingRoom_Heating_HeatingActive    "Active [%s]"  <fire> (FF_LivingRoom) {channel="millheat:heater:home:millheat__ff_livingroom:heatingActive"}
+Switch FF_LivingRoom_Heating_Independent   "Independent"  <fire> (FF_LivingRoom) {channel="millheat:heater:home:millheat__ff_livingroom:independent"}
 
-// karnapp, k1 = #153376, millheat_w600_k1  // DENNE SKIFTER NAVN!
-Number:Temperature  FF_Dining_K1_Temperature    "Temperature"   <heating>   (FF_Dining, gTemperature)   ["Temperature"] {channel="millheat:heater:millheat_api:153376:currentTemperature"}
-Switch              FF_Dining_K1_Heating_Active "Heating"   <fire>   (FF_Dining)   ["Heating"] {channel="millheat:heater:millheat_api:153376:heatingActive"}
-Number              FF_Dining_K1_Current_Energy   "Wats"      (FF_Dining) {channel="millheat:heater:millheat_api:153376:currentEnergy"}
 
-// 900w, Ovn Ada = #153373, millheat_w900_ada
-Number:Temperature  F2_AdaBedroom_Temperature    "Temperature"   <heating>   (F2_AdaBedroom, gTemperature)   ["Temperature"] {channel="millheat:heater:millheat_api:153373:currentTemperature"}
-Switch              F2_AdaBedroom_Heating_Active "Heating"   <fire>   (F2_AdaBedroom)   ["Heating"] {channel="millheat:heater:millheat_api:153373:heatingActive"}
-Number              F2_AdaBedroom_Current_Energy   "Wats"      (F2_AdaBedroom) {channel="millheat:heater:millheat_api:153373:currentEnergy"}
-
-//  burde ha et annet navn?, millheat_w1200_karnapp
-Number:Temperature FF_LivingRoom_Temperature "Temperature" <heating> (FF_LivingRoom, gTemperature) ["Temperature"] {channel="millheat:heater:millheat_api:153519:currentTemperature"}
-Switch              FF_LivingRoom_Heating_Active "Heating"   <fire>   (FF_LivingRoom)   ["Heating"] {channel="millheat:heater:millheat_api:153519:heatingActive"}
-Number              FF_LivingRoom_Current_Energy   "Wats"      (FF_LivingRoom) {channel="millheat:heater:millheat_api:153519:currentEnergy"}

@@ -48,6 +48,7 @@ sitemap default label="GV12" {
             Default item=C_Office_Light label="Office"
             Default item=C_LivingRoom_Light label="Living Room"
             Default item=FF_LivingRoom_Light label="Living Room"
+            Default item=gLight label="alt lys"
         }
 
         Text label="Oppvarming" icon="heating" {
@@ -58,6 +59,7 @@ sitemap default label="GV12" {
         Text label="Temperatur" icon="temperature" {
             //Default item=FF_Dining_K1_Temperature label="Karnapp venstre"
             //Default item=FF_Kitchen_Temperature label="Kjøkken"
+
             Default item=FF_LivingRoom_Temperature label="Stue"
 
             Default item=F2_AdaBedroom_Temperature label="Ada_Bedroom"
