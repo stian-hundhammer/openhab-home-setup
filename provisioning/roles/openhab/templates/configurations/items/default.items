@@ -55,4 +55,7 @@ Number:Temperature FF_LivingRoom_Heating_TargetTemperature    "Heater target [%.
 Switch FF_LivingRoom_Heating_HeatingActive    "Active [%s]"  <fire> (FF_LivingRoom) {channel="millheat:heater:home:millheat__ff_livingroom:heatingActive"}
 Switch FF_LivingRoom_Heating_Independent   "Independent"  <fire> (FF_LivingRoom) {channel="millheat:heater:home:millheat__ff_livingroom:independent"}
 
+Number:Temperature xxx_target_temp "xxx_target_temp [%.1f %unit%]" <temperature> (FF_LivingRoom, gHeating) { channel="millheat:room:home:millheat_room_ff_livingroom:targetTemperature"}
+Number:Temperature xxx_comfort_temp "xxx_comfort_temp [%.1f %unit%]" <temperature> (FF_LivingRoom, gHeating) { channel="millheat:room:home:millheat_room_ff_livingroom:comfortTemperature"}
+
 
