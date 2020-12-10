@@ -6,6 +6,7 @@ Group    F2                             "Second Floor"     <attic>              
 Group    AT                             "Attic"            <attic>              (Home)                             ["Attic"]
 Group    OU                             "Outside"          <garden>             (Home)                             ["Outdoor"]
 
+// All rooms
 Group    C_LaundryRoom                  "Laundry Room"     <washingmachine>     (Home, C)                          ["Room"]
 Group    C_Office                       "Office"           <office>             (Home, C)                          ["Room"]
 Group    C_Hallway                      "Hallway"          <corridor>           (Home, C)                          ["Corridor"]
@@ -25,12 +26,12 @@ Group    FF_Dining                      "Dining"                                
 Group    F2_Hallway                     "Hallway"          <corridor>           (Home, F2)                         ["Corridor"]
 Group    F2_Library                     "Library"          <office>             (Home, F2)                         ["Room"]
 Group    F2_Balcony                     "Balcony"                               (Home, F2)                         ["Outdoor"]
-Group    F2_MasterBedroom               "Master Bedroom"   <bedroom_red>        (Home, F2)                         ["Bedroom"]
 Group    F2_Bathroom                    "Bathroom"         <bath>               (Home, F2)                         ["Bathroom"]
 Group    F2_Stairwell                   "Stairwell"        <qualityofservice>   (Home, F2)
 Group    F2_AdaBedroom                  "Ada_Bedroom"      <bedroom>            (Home, F2)                         ["Bedroom"]
 Group    F2_RasmusBedroom               "Rasmus_Bedroom"   <bedroom>            (Home, F2)                         ["Bedroom"]
 Group    F2_JorgenBedroom               "Jorgen_Bedroom"   <bedroom>            (Home, F2)                         ["Bedroom"]
+Group    F2_MasterBedroom               "Master Bedroom"   <bedroom_red>        (Home, F2)                         ["Bedroom"]
 Group    AT_Attic                       "Attic"            <none>               (Home, AT)                         ["Attic"]
 Group    OU_Backyard                    "Backyard"         <lawnmower>          (Home, OU)                         ["Garden"]
 Group    OU_FrontYard                   "Front Yard"       <lawnmower>          (Home, OU)                         ["Garden"]
@@ -51,11 +52,10 @@ Switch Presence_Mobile_Ingunn "Ingunn mobil online" <network> (Home, Network) { 
 
 // Millheat
 Number:Temperature FF_LivingRoom_Heating_CurrentTemperature    "Heater current [%.1f %unit%]"  <temperature> (FF_LivingRoom, gHeating) {channel="millheat:heater:home:millheat__ff_livingroom:currentTemperature"}
+
+// er nå koblet med paperUI!
 Number:Temperature FF_LivingRoom_Heating_TargetTemperature    "Heater target [%.1f %unit%]"  <temperature> (FF_LivingRoom) {channel="millheat:heater:home:millheat__ff_livingroom:targetTemperature"}
+
 Switch FF_LivingRoom_Heating_HeatingActive    "Active [%s]"  <fire> (FF_LivingRoom) {channel="millheat:heater:home:millheat__ff_livingroom:heatingActive"}
 Switch FF_LivingRoom_Heating_Independent   "Independent"  <fire> (FF_LivingRoom) {channel="millheat:heater:home:millheat__ff_livingroom:independent"}
-
-Number:Temperature xxx_target_temp "xxx_target_temp [%.1f %unit%]" <temperature> (FF_LivingRoom, gHeating) { channel="millheat:room:home:millheat_room_ff_livingroom:targetTemperature"}
-Number:Temperature xxx_comfort_temp "xxx_comfort_temp [%.1f %unit%]" <temperature> (FF_LivingRoom, gHeating) { channel="millheat:room:home:millheat_room_ff_livingroom:comfortTemperature"}
-
-
+Switch FF_LivingRoom_Heating_Master   "Master"  <fire> (FF_LivingRoom) {channel="millheat:heater:home:millheat__ff_livingroom:masterSwitch"}
