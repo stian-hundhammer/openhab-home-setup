@@ -1,11 +1,51 @@
 #
 # main config file for openhab
 #
+- name: Create things directories
+  file:
+    path: "{{ openhab_conf }}/things"
+    state: directory
+    owner: openhab
+    group: openhab
+
+- name: Create items directories
+  file:
+    path: "{{ openhab_conf }}/items"
+    state: directory
+    owner: openhab
+    group: openhab
+
+- name: Create sitemaps directories
+  file:
+    path: "{{ openhab_conf }}/sitemaps"
+    state: directory
+    owner: openhab
+    group: openhab
+
+- name: Create rules directories
+  file:
+    path: "{{ openhab_conf }}/rules"
+    state: directory
+    owner: openhab
+    group: openhab
+
+- name: Create service directories
+  file:
+    path: "{{ openhab_conf }}/services"
+    state: directory
+    owner: openhab
+    group: openhab
+
+#
+# copy scripts in place
+#
 
 - name: Copy things scripts
   template:
     src:  configurations/things/{{ item }}
     dest: "{{ openhab_conf }}/things/{{ item }}"
+    owner: openhab
+    group: openhab
   with_items:
     - millheat.things
 
@@ -13,6 +53,8 @@
   template:
     src:  configurations/items/{{ item }}
     dest: "{{ openhab_conf }}/items/{{ item }}"
+    owner: openhab
+    group: openhab
   with_items:
   - default.items
 
@@ -20,6 +62,8 @@
   template:
     src:  configurations/sitemaps/{{ item }}
     dest: "{{ openhab_conf }}/sitemaps/{{ item }}"
+    owner: openhab
+    group: openhab
   with_items:
   - default.sitemap
 
@@ -27,5 +71,16 @@
   template:
     src:  configurations/rules/{{ item }}
     dest: "{{ openhab_conf }}/rules/{{ item }}"
+    owner: openhab
+    group: openhab
   with_items:
     - default.rules
+
+- name: Copy services scripts
+  template:
+    src:  configurations/services/{{ item }}
+    dest: "{{ openhab_conf }}/services/{{ item }}"
+    owner: openhab
+    group: openhab
+  with_items:
+    - addons.cfg

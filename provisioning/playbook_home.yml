@@ -1,5 +1,5 @@
-- hosts: openhab
-  become: no
+- hosts: amazone
+  become: yes
 
   roles:
     - openhab

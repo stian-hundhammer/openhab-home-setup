@@ -1,2 +1,9 @@
 [openhab-server]
-openhab ansible_connection=ssh ansible_ssh_user=openhabian
+amazone ansible_connection=ssh ansible_ssh_user=stian
+
+
+[py3-host]
+amazone
+
+[py3-host:vars]
+ansible_python_interpreter=/usr/bin/python3

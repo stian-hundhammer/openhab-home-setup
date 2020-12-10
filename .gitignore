@@ -2,3 +2,5 @@
 !*.secret
 *./group_vars/all
 provisioning/group_vars/all
+
+.idea
