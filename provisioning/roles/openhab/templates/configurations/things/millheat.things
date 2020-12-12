@@ -7,10 +7,10 @@ Bridge millheat:account:home "Millheat account" [ username="{{millheat_user}}", 
     //Thing room millheat_room_f2_bedroom1 "Millheat2FBedroom1" [ roomId={{millheat_room_2f_bedroom1_roomId}} ]
     //Thing room millheat_room_f2_bedroom_master "Millheat2FBedroom1" [ roomId={{millheat_room_2f_bedroom_master_roomId}} ]
 
-   // Thing heater millheat__ff_livingroom "Livingroom heater" [ heaterId={{millheat_ff_livingroom}} , power=1200 ]
+   Thing heater millheat__ff_livingroom "Livingroom heater" [ heaterId={{millheat_ff_livingroom}} , power=1200 ]
 
    //
-   // Thing heater millheat__f2_bedroom_a "Bedroom 1 heater" [ heaterId={{millheat_f2_bedroom_a}} , power=900 ]
+   Thing heater millheat__f2_bedroom_a "Bedroom a heater" [ heaterId={{millheat_f2_bedroom_a}} , power=900 ]
 
    //
    // Thing heater millheat__f2_bedroom_master "Master bedroom heater" [ heaterId={{millheat_f2_bedroom_master}} , power=900 ]
