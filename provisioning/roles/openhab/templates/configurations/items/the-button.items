@@ -1,0 +1,2 @@
+
+Number  nButton_Batt   "BBatt [%d %%]"    {channel="zwave:fibaro_fgpb101_00_000:controller:the-button-one:battery-level"}

@@ -1,0 +1,7 @@
+ Bridge zwave:serial_zstick:controller "ZWave Controller" [ port="/dev/ttyACM0", controller_softreset="false", controller_master="true", heal_enable="true", security_networkkey="00 11 22 33 44 55 66 77 88 99 AA BB CC DD EE FF" ]
+ {
+    # Fibaro - The Button
+    Thing fibaro_fgpb101_00_000 the-button-one "The Button One" [node_id=3]
+
+
+ }

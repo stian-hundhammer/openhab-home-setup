@@ -1,7 +1,11 @@
 Bridge millheat:account:home "Millheat account" [ username="{{millheat_user}}", password="{{millheat_pwd}}" ] {
-    //Thing home gl12 "MillHome" [ homeId={{millheat_homeId}} ]
-    // rooms have been problematic..but
 
+   //Thing home millheat__home_gv12 "MillHome" [ homeId={{millheat_homeId}} ]
+
+   // rooms
+   Thing room millheat__room_f2_bedroom_master "Master bedroom (room) heat" [ roomId={{millheat_room_f2_bedroom_master}} ]
+
+   // heaters
    // in ff...
    Thing heater millheat__ff_livingroom "Livingroom heater" [ heaterId={{millheat_ff_livingroom}} , power=1200 ]
 
