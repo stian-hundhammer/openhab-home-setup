@@ -1,2 +1,4 @@
 
-Number  nButton_Batt   "BBatt [%d %%]"    {channel="zwave:fibaro_fgpb101_00_000:controller:the-button-one:battery-level"}
+Number  nButton_Batt   "Super-duper-button Batt [%d %%]"  (C_Office) {channel="zwave:device:6615cd4fa7:node3:battery-level"}
+
+
