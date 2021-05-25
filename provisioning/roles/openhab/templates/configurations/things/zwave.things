@@ -3,5 +3,4 @@
     # Fibaro - The Button
     Thing fibaro_fgpb101_00_000 the-button-one "The Button One" [node_id=3]
 
-
  }
