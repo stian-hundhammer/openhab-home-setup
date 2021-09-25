@@ -1,6 +1,10 @@
- Bridge zwave:serial_zstick:controller "ZWave Controller" [ port="/dev/ttyACM0", controller_softreset="false", controller_master="true", heal_enable="true", security_networkkey="00 11 22 33 44 55 66 77 88 99 AA BB CC DD EE FF" ]
+ Bridge zwave:serial_zstick:controller "ZWave Controller" [ port="/dev/ttyACM0", controller_softreset="false", controller_master="true", heal_enable="true", security_networkkey="{{zwave_controller_security_network_key}}" ]
  {
     # Fibaro - The Button
-    Thing fibaro_fgpb101_00_000 the-button-one "The Button One" [node_id=3]
+    Thing fibaro_fgpb101_00_000 the-button "The Button" [node_id=3]
+
+    # Smart switch , Aeotech Smart Switch 7
+    Thing aeotech_zw175_00_000 smart-switch-one "Smart Switch One" [node_id=4]
+
 
  }
