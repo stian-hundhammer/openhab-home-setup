@@ -1,41 +1,6 @@
 #
 # main config file for openhab
 #
-- name: Create things directories
-  file:
-    path: "{{ openhab_conf }}/things"
-    state: directory
-    owner: openhab
-    group: openhab
-
-- name: Create items directories
-  file:
-    path: "{{ openhab_conf }}/items"
-    state: directory
-    owner: openhab
-    group: openhab
-
-- name: Create sitemaps directories
-  file:
-    path: "{{ openhab_conf }}/sitemaps"
-    state: directory
-    owner: openhab
-    group: openhab
-
-- name: Create rules directories
-  file:
-    path: "{{ openhab_conf }}/rules"
-    state: directory
-    owner: openhab
-    group: openhab
-
-- name: Create service directories
-  file:
-    path: "{{ openhab_conf }}/services"
-    state: directory
-    owner: openhab
-    group: openhab
-
 #
 # copy scripts in place
 #
