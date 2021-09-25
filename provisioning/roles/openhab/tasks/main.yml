@@ -52,3 +52,5 @@
     group: openhab
   with_items:
     - addons.cfg
+    - rrd4j.cfg
+    - runtime.cfg
