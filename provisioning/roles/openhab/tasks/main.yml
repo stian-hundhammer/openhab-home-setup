@@ -13,6 +13,7 @@
     group: openhab
   with_items:
     - millheat.things
+    - network.things
     - squeezebox.things
     - zwave.things
 
@@ -24,6 +25,7 @@
     group: openhab
   with_items:
   - default.items
+  - network.items
   - the-button.items
 
 - name: Copy sitemaps scripts
