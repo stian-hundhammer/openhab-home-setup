@@ -1,5 +1,7 @@
-// put network items here?
-//Group   Network               "Network"           <network>           (Home)                              ["Network"]
-//Group   Phone                 "Telefon"           <phone>           (Home, Network)                       ["hva skal her??"]
 
+// Main network switch
 Switch Gateway { channel="network:pingdevice:gateway:online" }
+
+// Mobile precence
+Switch Presence_Mobile_S "{{person_1}} mobil online" <network> (Home, Network) { channel="network:pingdevice:192_168_10_111:online" }
+Switch Presence_Mobile_Ingunn "{{person_2}} mobil online" <network> (Home, Network) { channel="network:pingdevice:192_168_10_124:online" }

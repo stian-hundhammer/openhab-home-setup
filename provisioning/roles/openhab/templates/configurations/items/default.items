@@ -37,15 +37,12 @@ Group    OU_Backyard                    "Backyard"         <lawnmower>          
 Group    OU_FrontYard                   "Front Yard"       <lawnmower>          (Home, OU)                         ["Garden"]
 Group    OU_Garage                      "Garage"           <garage>             (Home, OU)                         ["Garage"]
 
-Group   Network                         "Network"           <network>           (Home)                              ["Network"]
+Group   Network                         "Network"          <network>           (Home)                              ["Network"]
+Group   Phone                           "Phones"           <phone>              (Home, Network)                       ["hva skal her??"]
+
 
 Switch   FF_LivingRoom_Light            "Light"            <light>              (FF_LivingRoom, gLight)            ["Lighting", "Switchable"]   {channel="zwave:device:95f5b506:node2:switch_binary"}
 
 Group:Switch:OR(ON, OFF)   gLight         "Light"         <light>         (Home)   ["Lighting", "Switchable"]
 Group:Number:AVG           gHeating       "Heating"       <heating>       (Home)   ["HVAC"]
 Group:Number:AVG           gTemperature   "Temperature"   <temperature>   (Home)   ["Temperature"]
-
-
-// move to network.items ?
-Switch Presence_Mobile_Stian "stian mobil online" <network> (Home, Network) { channel="network:pingdevice:192_168_10_111:online" }
-Switch Presence_Mobile_Ingunn "Ingunn mobil online" <network> (Home, Network) { channel="network:pingdevice:192_168_10_124:online" }
