@@ -1,0 +1,24 @@
+//
+// Millheat
+//
+// ff
+Number:Temperature FF_LivingRoom_Heating_CurrentTemperature    "Heater current [%.1f %unit%]"  <temperature> (FF_LivingRoom, gHeating) {channel="millheat:heater:home:millheat__ff_livingroom:currentTemperature"}
+
+// do not work - maybe try to connect to room..
+Number:Temperature FF_LivingRoom_Heating_TargetTemperature    "Heater target [%.1f %unit%]"  <temperature> (FF_LivingRoom) {channel="millheat:heater:home:millheat__ff_livingroom:holidayTemp"}
+Number:Temperature F2_MasterBedroom_Heating_HolidayTemperature    "holidayTemp [%.1f %unit%]"  <temperature> (F2_MasterBedroom) {channel="millheat:room:home:millheat__room_f2_bedroom_master:holidayTemp"}
+Number:Temperature F2_MasterBedroom_Heating_TargetTemperature    "targetTemperature [%.1f %unit%]"  <temperature> (F2_MasterBedroom) {channel="millheat:room:home:millheat__room_f2_bedroom_master:targetTemperature"}
+Number delete-me    "targetTemperature [%.1f %unit%]"  <temperature> (F2_MasterBedroom) {channel="millheat:room:home:millheat__room_f2_bedroom_master:targetTemperature"}
+
+// f2
+Number:Temperature F2_AdaBedroom_Heating_CurrentTemperature    "Heater current [%.1f %unit%]"  <temperature> (F2_AdaBedroom, gHeating) {channel="millheat:heater:home:millheat__f2_bedroom_a:currentTemperature"}
+Number:Temperature F2_Library_Heating_CurrentTemperature    "Heater current [%.1f %unit%]"  <temperature> (F2_Library, gHeating) {channel="millheat:heater:home:millheat__f2_livingroom:currentTemperature"}
+Number:Temperature F2_MasterBedroom_Heating_CurrentTemperature    "Heater current [%.1f %unit%]"  <temperature> (F2_MasterBedroom, gHeating) {channel="millheat:heater:home:millheat__f2_bedroom_master:currentTemperature"}
+
+
+// er nå koblet med paperUI!
+//Number:Temperature FF_LivingRoom_Heating_TargetTemperature    "Heater target [%.1f %unit%]"  <temperature> (FF_LivingRoom) {channel="millheat:heater:home:millheat__ff_livingroom:targetTemperature"}
+
+// Switch FF_LivingRoom_Heating_HeatingActive    "Active [%s]"  <fire> (FF_LivingRoom) {channel="millheat:heater:home:millheat__ff_livingroom:heatingActive"}
+// Switch FF_LivingRoom_Heating_Independent   "Independent"  <fire> (FF_LivingRoom) {channel="millheat:heater:home:millheat__ff_livingroom:independent"}
+//Switch FF_LivingRoom_Heating_Master   "Master"  <fire> (FF_LivingRoom) {channel="millheat:heater:home:millheat__ff_livingroom:masterSwitch"}

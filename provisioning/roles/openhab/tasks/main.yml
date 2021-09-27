@@ -25,6 +25,7 @@
     group: openhab
   with_items:
   - default.items
+  - millheat.items
   - network.items
   - the-button.items
 
