@@ -28,9 +28,9 @@ sitemap default label="GV12" {
         Group item=F2_MasterBedroom
         Group item=F2_Bathroom
         Group item=F2_Stairwell
-        Group item=F2_AdaBedroom
-        Group item=F2_RasmusBedroom
-        Group item=F2_JorgenBedroom
+        Group item=F2_Bedroom_A
+        Group item=F2_Bedroom_R
+        Group item=F2_Bedroom_J
     }
 
     Frame label="Attic" icon="attic" {
@@ -52,8 +52,8 @@ sitemap default label="GV12" {
         }
 
         Text label="Oppvarming" icon="heating" {
-            Default item=F2_RasmusBedroom_Heating label="Rasmus_Bedroom"
-            Default item=F2_JorgenBedroom_Heating label="Jorgen_Bedroom"
+            Default item=F2_Bedroom_R_Heating label="{{person_4}} Bedroom"
+            Default item=F2_Bedroom_J_Heating label="{{person_5}} Bedroom"
         }
 
         Text label="Temperatur" icon="temperature" {
@@ -62,15 +62,15 @@ sitemap default label="GV12" {
 
             Default item=FF_LivingRoom_Temperature label="Stue"
 
-            Default item=F2_AdaBedroom_Temperature label="Ada_Bedroom"
-            //Default item=F2_RasmusBedroom_Temperature label="Rasmus_Bedroom"
-            //Default item=F2_JorgenBedroom_Temperature label="Jorgen_Bedroom"
+            Default item=F2_Bedroom_A_Temperature label="{{person_3}} Bedroom"
+            //Default item=F2_Bedroom_R_Temperature label="{{person_4}} Bedroom"
+            //Default item=F2_Bedroom__J_Temperature label="{{person_5}} Bedroom"
 
         }
 
         Text label="Presence" icon="network" {
-            Default item=Presence_Mobile_Stian label="Stian"
-            Default item=Presence_Mobile_Ingunn label="Ingunn"
+            Default item=Presence_Mobile_Person1 label="{{person_1}}"
+            Default item=Presence_Mobile_Person2 label="{{person_2}}"
         }
     }
 

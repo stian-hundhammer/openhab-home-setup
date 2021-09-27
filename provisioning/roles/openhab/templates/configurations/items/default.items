@@ -27,10 +27,10 @@ Group    F2_Hallway                     "Hallway"          <corridor>           
 Group    F2_Library                     "Library"          <office>             (Home, F2)                         ["Room"]
 Group    F2_Balcony                     "Balcony"                               (Home, F2)                         ["Outdoor"]
 Group    F2_Bathroom                    "Bathroom"         <bath>               (Home, F2)                         ["Bathroom"]
-Group    F2_Stairwell                   "Stairwell"        <qualityofservice>   (Home, F2)
-Group    F2_AdaBedroom                  "Ada_Bedroom"      <bedroom>            (Home, F2)                         ["Bedroom"]
-Group    F2_RasmusBedroom               "Rasmus_Bedroom"   <bedroom>            (Home, F2)                         ["Bedroom"]
-Group    F2_JorgenBedroom               "Jorgen_Bedroom"   <bedroom>            (Home, F2)                         ["Bedroom"]
+Group    F2_Stairwell                   "Stairwell"        <stair>              (Home, F2)
+Group    F2_Bedroom_A                   "{{person_3}} Bedroom"          <bedroom>            (Home, F2)            ["Bedroom"]
+Group    F2_Bedroom_R                   "{{person_4}} Bedroom"          <bedroom>            (Home, F2)            ["Bedroom"]
+Group    F2_Bedroom_J                   "{{person_5}} Bedroom"          <bedroom>            (Home, F2)            ["Bedroom"]
 Group    F2_MasterBedroom               "Master Bedroom"   <bedroom_red>        (Home, F2)                         ["Bedroom"]
 Group    AT_Attic                       "Attic"            <none>               (Home, AT)                         ["Attic"]
 Group    OU_Backyard                    "Backyard"         <lawnmower>          (Home, OU)                         ["Garden"]
