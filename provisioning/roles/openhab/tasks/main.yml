@@ -27,6 +27,7 @@
   - default.items
   - millheat.items
   - network.items
+  - zwave.items
   - the-button.items
 
 - name: Copy sitemaps scripts

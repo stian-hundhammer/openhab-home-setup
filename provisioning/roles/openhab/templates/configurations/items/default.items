@@ -41,8 +41,8 @@ Group   Network                         "Network"          <network>           (
 Group   Phone                           "Phones"           <phone>              (Home, Network)                       ["hva skal her??"]
 
 
-Switch   FF_LivingRoom_Light            "Light"            <light>              (FF_LivingRoom, gLight)            ["Lighting", "Switchable"]   {channel="zwave:device:95f5b506:node2:switch_binary"}
+// Switch   FF_LivingRoom_Light            "Light"            <light>              (FF_LivingRoom, gLight)            ["Lighting", "Switchable"]   {channel="zwave:device:95f5b506:node2:switch_binary"}
 
-Group:Switch:OR(ON, OFF)   gLight         "Light"         <light>         (Home)   ["Lighting", "Switchable"]
+Group:Switch:OR(ON, OFF)   gLight         "Light group"         <light>         (Home)   ["Lighting", "Switchable"]
 Group:Number:AVG           gHeating       "Heating"       <heating>       (Home)   ["HVAC"]
 Group:Number:AVG           gTemperature   "Temperature"   <temperature>   (Home)   ["Temperature"]
