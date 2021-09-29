@@ -1,6 +1,6 @@
 
 // Main network switch
-Switch Gateway { channel="network:pingdevice:gateway:online" }
+Switch Network_Gateway "Gateway"  (Network, C_TechnicalRoom) { channel="network:pingdevice:gateway:online" }
 
 // Mobile precence
 Switch Presence_Mobile_S "{{person_1}} mobil online" <network> (Home, Network) { channel="network:pingdevice:192_168_10_111:online" }

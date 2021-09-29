@@ -1,6 +1,7 @@
 sitemap default label="GV12" {
     Frame label="Cellar" icon="cellar" {
         Group item=C_LaundryRoom
+        Group item=C_TechnicalRoom
         Group item=C_Office
         Group item=C_Hallway
         Group item=C_Toilet

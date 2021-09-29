@@ -8,6 +8,7 @@ Group    OU                             "Outside"          <garden>             
 
 // All rooms
 Group    C_LaundryRoom                  "Laundry Room"     <washingmachine>     (Home, C)                          ["Room"]
+Group    C_TechnicalRoom                "Technical Room"   <office>             (Home, C)                          ["Room"]
 Group    C_Office                       "Office"           <office>             (Home, C)                          ["Room"]
 Group    C_Hallway                      "Hallway"          <corridor>           (Home, C)                          ["Corridor"]
 Group    C_Toilet                       "Toilet"           <toilet>             (Home, C)                          ["Bathroom"]
