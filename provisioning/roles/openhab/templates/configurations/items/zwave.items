@@ -7,7 +7,22 @@
 Switch FF_LivingRoom_LightSwitch "Light" <light> (FF_LivingRoom, gLight) { channel = "zwave:aeotec_zw175_00_000:controller:aeotec-smart-switch-one:switch_binary" }
 
 
+// thermofloor_ztrm3_00_000
+// https://www.openhab.org/addons/bindings/zwave/thing.html?thingTypeUID=thermofloor_ztrm3_00_000
+// https://opensmarthouse.org/zwavedatabase/1238
 
+// Thing - heating-ff-kitchen-_floor_heating_one
+// FF_Kitchen
+Number FF_Kitchen_Heating_floor_one_kwh "Floor kitchen one kWh" (FF_Kitchen) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_kitchen_floor_heating_one:meter_kwh" }
+Number FF_Kitchen_Heating_floor_one_watts "Floor kitchen one watts" (FF_Kitchen) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_kitchen_floor_heating_one:meter_watts" }
+Number:Temperature FF_Kitchen_Heating_floor_one_Setpoint "Floor kitchen one Setpoint" <tempmperature> (FF_Kitchen, gHeating) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_kitchen_floor_heating_one:thermostat_setpoint_heating" }
+Number:Temperature FF_Kitchen_Heating_floor_one_Sensor_temperature "Floor kitchen one Sensor temp 2" <tempmperature> (FF_Kitchen, gHeating) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_kitchen_floor_heating_one:sensor_temperature2" }
+
+// Thing -
+// FF_Toilet
+Number FF_Toilet_Heating_floor_kwh "Floor toilet kWh" (FF_Toilet) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_toilet_floor_heating:meter_kwh" }
+Number FF_Toilet_Heating_floor_watts "Floor toilet kWh" (FF_Toilet) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_toilet_floor_heating:meter_watts" }
+Number:Temperature FF_Toilet_Heating_floo_Setpoint "Floor toilet Setpoint" <tempmperature> (FF_Toilet, gHeating) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_toilet_floor_heating:thermostat_setpoint_heating" }
 
 
 

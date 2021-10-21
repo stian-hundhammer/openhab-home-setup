@@ -8,4 +8,9 @@
     // Thing aeotec_zw175_00_000 smart-switch-one "Smart Switch One" [ node_id=4 ]
     aeotec_zw175_00_000 aeotec-smart-switch-one "Smart Switch One" [ node_id=4 ]
 
+    // toilet
+    thermofloor_ztrm3_00_000 heatit-ff_toilet_floor_heating "FF Toilet floor heating" [ node_id=5 ]
+
+    // top thermostat kitchen
+    thermofloor_ztrm3_00_000 heatit-ff_kitchen_floor_heating_one "FF Kitchen floor heating one" [ node_id=6 ]
  }

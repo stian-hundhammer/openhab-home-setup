@@ -8,7 +8,7 @@ Number:Temperature FF_LivingRoom_Heating_CurrentTemperature    "Heater current [
 Number:Temperature FF_LivingRoom_Heating_TargetTemperature    "Heater target [%.1f %unit%]"  <temperature> (FF_LivingRoom) {channel="millheat:heater:home:millheat__ff_livingroom:holidayTemp"}
 Number:Temperature F2_MasterBedroom_Heating_HolidayTemperature    "holidayTemp [%.1f %unit%]"  <temperature> (F2_MasterBedroom) {channel="millheat:room:home:millheat__room_f2_bedroom_master:holidayTemp"}
 Number:Temperature F2_MasterBedroom_Heating_TargetTemperature    "targetTemperature [%.1f %unit%]"  <temperature> (F2_MasterBedroom) {channel="millheat:room:home:millheat__room_f2_bedroom_master:targetTemperature"}
-Number delete-me    "targetTemperature [%.1f %unit%]"  <temperature> (F2_MasterBedroom) {channel="millheat:room:home:millheat__room_f2_bedroom_master:targetTemperature"}
+// Number delete-me    "targetTemperature [%.1f %unit%]"  <temperature> (F2_MasterBedroom) {channel="millheat:room:home:millheat__room_f2_bedroom_master:targetTemperature"}
 
 // f2
 Number:Temperature F2_Bedroom_A_Heating_CurrentTemperature    "Heater current [%.1f %unit%]"  <temperature> (F2_Bedroom_A, gHeating) {channel="millheat:heater:home:millheat__f2_bedroom_a:currentTemperature"}
