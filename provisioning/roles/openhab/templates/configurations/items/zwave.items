@@ -95,4 +95,22 @@ Number FF_Kitchen_hall_lights_notification_send1 "Hall: Notification Send 1" (FF
 Dimmer FF_Kitchen_hall_lights_dimmer2 "Hall: Dimmer2" (FF_Kitchen) { channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_hall_lights:switch_dimmer2" }
 
 
+// Roof light , FF_KitchenEntrance
+// Fibaro Dimmer 2 - FGD-212
+Number FF_Kitchen_entrance_lights_scene_number "K/E: Scene Number" (FF_KitchenEntrance) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_entrance_light:scene_number" }
+Switch FF_Kitchen_entrance_lights_meter_reset "K/E: Meter Reset" (FF_KitchenEntrance) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_entrance_light:meter_reset" }
+Number FF_Kitchen_entrance_lights_config_decimal "K/E: Config Decimal/Force initial Brightness" (FF_KitchenEntrance) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_entrance_light:config_decimal" }
+Switch FF_Kitchen_entrance_lights_alarm_system "K/E: Alarm System" (FF_KitchenEntrance) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_entrance_light:alarm_system" }
+Switch FF_Kitchen_entrance_lights_alarm_heat "K/E: Alarm Heat" (FF_KitchenEntrance) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_entrance_light:alarm_heat" }
+Switch FF_Kitchen_entrance_lights_alarm_power "K/E: Alarm Power" (FF_KitchenEntrance) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_entrance_light:alarm_power" }
+Number FF_Kitchen_entrance_lights_sensor_power1 "K/E: Sensor Power One watts" (FF_KitchenEntrance) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_entrance_light:sensor_power1" }
+Dimmer FF_Kitchen_entrance_lights_dimmer1 "K/E: Dimmer1" (FF_KitchenEntrance) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_entrance_light:switch_dimmer1" }
+Number FF_Kitchen_entrance_lights_meter_kwh1 "K/E: Meter kWh 1" (FF_KitchenEntrance) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_entrance_light:meter_kwh1" }
+Number FF_Kitchen_entrance_lights_meter_watts "K/E: Meter watts 1" (FF_KitchenEntrance) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_entrance_light:meter_watts1" }
+Switch FF_Kitchen_entrance_lights_alarm_system1 "K/E: Alarm System 1" (FF_KitchenEntrance) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_entrance_light:alarm_system1" }
+Switch FF_Kitchen_entrance_lights_alarm_heat1 "K/E: Alarm Heat 1" (FF_KitchenEntrance) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_entrance_light:alarm_heat1" }
+Switch FF_Kitchen_entrance_lights_alarm_power1 "K/E: Alarm Power 1" (FF_KitchenEntrance) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_entrance_light:alarm_power1" }
+Number FF_Kitchen_entrance_lights_notification_send1 "K/E: Notification Send 1" (FF_KitchenEntrance) {channel = "zwave:fibaro_fgd212_03_005:controller:ff_kitchen_entrance_light-ff_kitchen_bench:notification_send1" }
+Dimmer FF_Kitchen_entrance_lights_dimmer2 "K/E: Dimmer2" (FF_KitchenEntrance) { channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_entrance_light:switch_dimmer2" }
+
 

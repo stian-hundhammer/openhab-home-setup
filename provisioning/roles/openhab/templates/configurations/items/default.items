@@ -19,6 +19,7 @@ Group    FF_Wardrobe                    "Wardrobe"         <wardrobe>           
 Group    FF_Hallway                     "Hallway"          <corridor>           (Home, FF)                         ["Corridor"]
 Group    FF_Corridor                    "Corridor"         <corridor>           (Home, FF)                         ["Corridor"]
 Group    FF_Kitchen                     "Kitchen"          <kitchen>            (Home, FF)                         ["Kitchen"]
+Group    FF_KitchenEntrance             "Kitchen Entrance"  <kitchen>            (Home, FF, FF_Kitchen)             ["Kitchen Entrance"]
 Group    FF_Lounge                      "Lounge"           <sofa>               (Home, FF)                         ["Room"]
 Group    FF_LivingRoom                  "Living Room"      <sofa>               (Home, FF)                         ["LivingRoom"]
 Group    FF_Porch                       "Porch"            <group>              (Home, FF)                         ["Outside"]

@@ -22,4 +22,5 @@
     // Fibaro Dimmer 2 - FGD-212
     fibaro_fgd212_03_005 fibaro-ff_kitchen_bench "FF Kitchen bench light" [ node_id = 8 ]
     fibaro_fgd212_03_005 fibaro-ff_kitchen_hall_lights  "FF Kitchen hall lights" [ node_id = 9 ]
+    fibaro_fgd212_03_005 fibaro-ff_kitchen_entrance_light  "FF Kitchen entrence lights" [ node_id = 10 ]
  }
