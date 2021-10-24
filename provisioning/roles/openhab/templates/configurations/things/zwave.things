@@ -18,4 +18,8 @@
     // thermostat kitchen
     thermofloor_ztrm3_00_000 heatit-ff_kitchen_floor_heating_one "FF Kitchen floor heating one" [ node_id=6 ]
     thermofloor_ztrm3_00_000 heatit-ff_kitchen_floor_heating_two "FF Kitchen floor heating two" [ node_id=7 ]
+
+    // Fibaro Dimmer 2 - FGD-212
+    fibaro_fgd212_03_005 fibaro-ff_kitchen_bench "FF Kitchen bench light" [ node_id = 8 ]
+    fibaro_fgd212_03_005 fibaro-ff_kitchen_hall_lights  "FF Kitchen hall lights" [ node_id = 9 ]
  }

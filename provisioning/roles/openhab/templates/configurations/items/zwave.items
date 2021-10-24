@@ -53,10 +53,46 @@ Number:Temperature FF_Kitchen_Heating_floor_two_Sensor_temperature4 "Floor kitch
 // Thing -
 // FF_Toilet
 Number FF_Toilet_Heating_floor_kwh "Floor toilet kWh" (FF_Toilet) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_toilet_floor_heating:meter_kwh" }
-Number FF_Toilet_Heating_floor_watts "Floor toilet kWh" (FF_Toilet) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_toilet_floor_heating:meter_watts" }
+Number FF_Toilet_Heating_floor_watts "Floor toilet watts" (FF_Toilet) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_toilet_floor_heating:meter_watts" }
 Number:Temperature FF_Toilet_Heating_floor_setpoint "Floor toilet Setpoint" <tempmperature> (FF_Toilet) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_toilet_floor_heating:thermostat_setpoint_heating" }
 
 
+
+
+// Fibaro Dimmer 2 - FGD-212 - Kitchen bench
+Number FF_Kitchen_bench_scene_number "Bench: Scene Number" (FF_Kitchen) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_bench:scene_number" }
+Switch FF_Kitchen_bench_meter_reset "Bench: Meter Reset" (FF_Kitchen) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_bench:meter_reset" }
+Number FF_Kitchen_bench_config_decimal "Bench: Config Decimal/Force initial Brightness" (FF_Kitchen) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_bench:config_decimal" }
+Switch FF_Kitchen_bench_alarm_system "Bench: Alarm System" (FF_Kitchen) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_bench:alarm_system" }
+Switch FF_Kitchen_bench_alarm_heat "Bench: Bench: Alarm Heat" (FF_Kitchen) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_bench:alarm_heat" }
+Switch FF_Kitchen_bench_alarm_power "Bench: Alarm Power" (FF_Kitchen) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_bench:alarm_power" }
+Number FF_Kitchen_bench_sensor_power1 "Bench: Sensor Power One watts" (FF_Kitchen) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_bench:sensor_power1" }
+Dimmer FF_Kitchen_bench_dimmer1 "Bench: Dimmer1" (FF_Kitchen) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_bench:switch_dimmer1" }
+Number FF_Kitchen_bench_meter_kwh1 "Bench: Meter kWh 1" (FF_Kitchen) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_bench:meter_kwh1" }
+Number FF_Kitchen_bench_meter_watts "Bench: Meter watts 1" (FF_Kitchen) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_bench:meter_watts1" }
+Switch FF_Kitchen_bench_alarm_system1 "Bench: Alarm System 1" (FF_Kitchen) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_bench:alarm_system1" }
+Switch FF_Kitchen_bench_alarm_heat1 "Bench: Alarm Heat 1" (FF_Kitchen) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_bench:alarm_heat1" }
+Switch FF_Kitchen_bench_alarm_power1 "Bench: Alarm Power 1" (FF_Kitchen) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_bench:alarm_power1" }
+Number FF_Kitchen_bench_notification_send1 "Bench: Notification Send 1" (FF_Kitchen) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_bench:notification_send1" }
+Dimmer FF_Kitchen_bench_dimmer2 "Bench: Dimmer2" (FF_Kitchen) { channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_bench:switch_dimmer2" }
+
+
+// Fibaro Dimmer 2 - FGD-212 - Kitchen hall
+Number FF_Kitchen_hall_lights_scene_number "Hall: Scene Number" (FF_Kitchen) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_hall_lights:scene_number" }
+Switch FF_Kitchen_hall_lights_meter_reset "Hall: Meter Reset" (FF_Kitchen) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_hall_lights:meter_reset" }
+Number FF_Kitchen_hall_lights_config_decimal "Hall: Config Decimal/Force initial Brightness" (FF_Kitchen) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_hall_lights:config_decimal" }
+Switch FF_Kitchen_hall_lights_alarm_system "Hall: Alarm System" (FF_Kitchen) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_hall_lights:alarm_system" }
+Switch FF_Kitchen_hall_lights_alarm_heat "Hall: Alarm Heat" (FF_Kitchen) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_hall_lights:alarm_heat" }
+Switch FF_Kitchen_hall_lights_alarm_power "Hall: Alarm Power" (FF_Kitchen) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_hall_lights:alarm_power" }
+Number FF_Kitchen_hall_lights_sensor_power1 "Hall: Sensor Power One watts" (FF_Kitchen) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_hall_lights:sensor_power1" }
+Dimmer FF_Kitchen_hall_lights_dimmer1 "Hall: Dimmer1" (FF_Kitchen) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_hall_lights:switch_dimmer1" }
+Number FF_Kitchen_hall_lights_meter_kwh1 "Hall: Meter kWh 1" (FF_Kitchen) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_hall_lights:meter_kwh1" }
+Number FF_Kitchen_hall_lights_meter_watts "Hall: Meter watts 1" (FF_Kitchen) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_hall_lights:meter_watts1" }
+Switch FF_Kitchen_hall_lights_alarm_system1 "Hall: Alarm System 1" (FF_Kitchen) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_hall_lights:alarm_system1" }
+Switch FF_Kitchen_hall_lights_alarm_heat1 "Hall: Alarm Heat 1" (FF_Kitchen) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_hall_lights:alarm_heat1" }
+Switch FF_Kitchen_hall_lights_alarm_power1 "Hall: Alarm Power 1" (FF_Kitchen) {channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_hall_lights:alarm_power1" }
+Number FF_Kitchen_hall_lights_notification_send1 "Hall: Notification Send 1" (FF_Kitchen) {channel = "zwave:fibaro_fgd212_03_005:controller:ff_kitchen_hall_lights-ff_kitchen_bench:notification_send1" }
+Dimmer FF_Kitchen_hall_lights_dimmer2 "Hall: Dimmer2" (FF_Kitchen) { channel = "zwave:fibaro_fgd212_03_005:controller:fibaro-ff_kitchen_hall_lights:switch_dimmer2" }
 
 
 
