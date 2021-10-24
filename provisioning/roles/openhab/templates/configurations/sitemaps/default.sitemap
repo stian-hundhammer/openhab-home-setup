@@ -58,6 +58,9 @@ sitemap default label="GV12" {
         }
 
         Text label="Temperatur" icon="temperature" {
+            Setpoint item=FF_Kitchen_Heating_floor_one_setpoint label="Kitchen [%.1f °C]" minValue=14.1 maxValue=25.1 step=0.5
+
+            //Presentation of the Setpoint element in BasicUI
             //Default item=FF_Dining_K1_Temperature label="Karnapp venstre"
             //Default item=FF_Kitchen_Temperature label="Kjøkken"
 

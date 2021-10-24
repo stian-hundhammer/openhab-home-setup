@@ -14,8 +14,19 @@ Switch FF_LivingRoom_LightSwitch "Light" <light> (FF_LivingRoom, gLight) { chann
 // Thing - heating-ff-kitchen-_floor_heating_one
 // FF_Kitchen
 Number FF_Kitchen_Heating_floor_one_kwh "Floor kitchen one kWh" (FF_Kitchen) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_kitchen_floor_heating_one:meter_kwh" }
+Number FF_Kitchen_Heating_floor_one_meter_voltage "Floor kitchen one meter voltage" (FF_Kitchen) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_kitchen_floor_heating_one:meter_voltage" }
 Number FF_Kitchen_Heating_floor_one_watts "Floor kitchen one watts" (FF_Kitchen) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_kitchen_floor_heating_one:meter_watts" }
-Number:Temperature FF_Kitchen_Heating_floor_one_Setpoint "Floor kitchen one Setpoint" <tempmperature> (FF_Kitchen, gHeating) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_kitchen_floor_heating_one:thermostat_setpoint_heating" }
+Number FF_Kitchen_Heating_floor_one_thermostat_mode "Floor kitchen thermostat mode" (FF_Kitchen) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_kitchen_floor_heating_one:thermostat_mode" }
+Number FF_Kitchen_Heating_floor_one_operating_state "Floor kitchen operating state" (FF_Kitchen) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_kitchen_floor_heating_one:thermostat_state" }
+Number:Temperature FF_Kitchen_Heating_floor_one_setpoint "Floor kitchen one Setpoint" <tempmperature> (FF_Kitchen) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_kitchen_floor_heating_one:thermostat_setpoint_heating" }
+
+Number FF_Kitchen_Heating_floor_one_kwh1 "Floor kitchen one kWh 1" (FF_Kitchen) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_kitchen_floor_heating_one:meter_kwh1" }
+Number FF_Kitchen_Heating_floor_one_meter_voltage1 "Floor kitchen one meter voltage 1" (FF_Kitchen) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_kitchen_floor_heating_one:meter_voltage1" }
+Number FF_Kitchen_Heating_floor_one_watts1 "Floor kitchen one watts 1" (FF_Kitchen) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_kitchen_floor_heating_one:meter_watts1" }
+Number FF_Kitchen_Heating_floor_one_thermostat_mode1 "Floor kitchen thermostat mode 1" (FF_Kitchen) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_kitchen_floor_heating_one:thermostat_mode1" }
+Number FF_Kitchen_Heating_floor_one_operating_state1 "Floor kitchen operating state 1" (FF_Kitchen) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_kitchen_floor_heating_one:thermostat_state1" }
+Number:Temperature FF_Kitchen_Heating_floor_one_setpoint1 "Floor kitchen one Setpoint 1" <tempmperature> (FF_Kitchen) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_kitchen_floor_heating_one:thermostat_setpoint_heating1" }
+
 Number:Temperature FF_Kitchen_Heating_floor_one_Sensor_temperature "Floor kitchen one Sensor temp 2" <tempmperature> (FF_Kitchen, gHeating) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_kitchen_floor_heating_one:sensor_temperature2" }
 Number:Temperature FF_Kitchen_Heating_floor_one_Sensor_temperature3 "Floor kitchen one Sensor temp 3" <tempmperature> (FF_Kitchen, gHeating) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_kitchen_floor_heating_one:sensor_temperature3" }
 Number:Temperature FF_Kitchen_Heating_floor_one_Sensor_temperature4 "Floor kitchen one Sensor temp 4" <tempmperature> (FF_Kitchen, gHeating) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_kitchen_floor_heating_one:sensor_temperature4" }
@@ -24,7 +35,7 @@ Number:Temperature FF_Kitchen_Heating_floor_one_Sensor_temperature4 "Floor kitch
 // FF_Toilet
 Number FF_Toilet_Heating_floor_kwh "Floor toilet kWh" (FF_Toilet) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_toilet_floor_heating:meter_kwh" }
 Number FF_Toilet_Heating_floor_watts "Floor toilet kWh" (FF_Toilet) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_toilet_floor_heating:meter_watts" }
-Number:Temperature FF_Toilet_Heating_floo_Setpoint "Floor toilet Setpoint" <tempmperature> (FF_Toilet, gHeating) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_toilet_floor_heating:thermostat_setpoint_heating" }
+Number:Temperature FF_Toilet_Heating_floor_setpoint "Floor toilet Setpoint" <tempmperature> (FF_Toilet) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_toilet_floor_heating:thermostat_setpoint_heating" }
 
 
 
