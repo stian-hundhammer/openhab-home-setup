@@ -15,6 +15,7 @@ sitemap default label="GV12" {
         Group item=FF_Hallway
         Group item=FF_Toilet
         Group item=FF_Kitchen
+        Group item=FF_KitchenEntrance
         Group item=FF_Lounge
         Group item=FF_LivingRoom
         Group item=FF_Dining
