@@ -13,12 +13,10 @@ sitemap default label="GV12" {
         Group item=FF_Entryway
         Group item=FF_Wardrobe
         Group item=FF_Hallway
-        Group item=FF_Corridor
+        Group item=FF_Toilet
         Group item=FF_Kitchen
         Group item=FF_Lounge
         Group item=FF_LivingRoom
-        Group item=FF_Porch
-        Group item=FF_Toilet
         Group item=FF_Dining
     }
 
@@ -42,9 +40,13 @@ sitemap default label="GV12" {
         Group item=OU_Backyard
         Group item=OU_FrontYard
         Group item=OU_Garage
+        Group item=OU_Porch
     }
 
     Frame {
+
+        Group item=Phone
+
         Text label="Lys" icon="light" {
             Default item=C_Office_Light label="Office"
             Default item=C_LivingRoom_Light label="Living Room"
