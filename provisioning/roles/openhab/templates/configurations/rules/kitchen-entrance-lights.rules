@@ -1,0 +1,14 @@
+rule "entrance-light-on"
+when
+    Item FF_Kitchen_bench_dimmer1 changed to "100"
+then
+    FF_Kitchen_entrance_lights_dimmer1.sendCommand("100")
+end
+
+rule "entrance-light-off"
+when
+    Item FF_Kitchen_bench_dimmer1 changed to "0"
+then
+    FF_Kitchen_entrance_lights_dimmer1.sendCommand("0")
+end
+
