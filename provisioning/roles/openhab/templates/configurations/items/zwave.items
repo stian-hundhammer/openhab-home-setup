@@ -28,7 +28,8 @@ Number FF_Kitchen_Heating_floor_one_operating_state1 "Floor kitchen one operatin
 Number:Temperature FF_Kitchen_Heating_floor_one_setpoint1 "Floor kitchen one Setpoint 1" <tempmperature> (FF_Kitchen) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_kitchen_floor_heating_one:thermostat_setpoint_heating1" }
 
 Number:Temperature FF_Kitchen_Heating_floor_one_Sensor_temperature "Floor kitchen one Sensor temp 2" <tempmperature> (FF_Kitchen, gHeating) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_kitchen_floor_heating_one:sensor_temperature2" }
-Number:Temperature FF_Kitchen_Heating_floor_one_Sensor_temperature3 "Floor kitchen one Sensor temp 3" <tempmperature> (FF_Kitchen, gHeating) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_kitchen_floor_heating_one:sensor_temperature3" }
+// alway zero - remove
+// Number:Temperature FF_Kitchen_Heating_floor_one_Sensor_temperature3 "Floor kitchen one Sensor temp 3" <tempmperature> (FF_Kitchen, gHeating) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_kitchen_floor_heating_one:sensor_temperature3" }
 Number:Temperature FF_Kitchen_Heating_floor_one_Sensor_temperature4 "Floor kitchen one Sensor temp 4" <tempmperature> (FF_Kitchen, gHeating) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_kitchen_floor_heating_one:sensor_temperature4" }
 
 // Thing - heating-ff-kitchen-_floor_heating_two
@@ -47,7 +48,8 @@ Number FF_Kitchen_Heating_floor_two_operating_state1 "Floor kitchen two operatin
 Number:Temperature FF_Kitchen_Heating_floor_two_setpoint1 "Floor kitchen two Setpoint 1" <tempmperature> (FF_Kitchen) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_kitchen_floor_heating_two:thermostat_setpoint_heating1" }
 
 Number:Temperature FF_Kitchen_Heating_floor_two_Sensor_temperature "Floor kitchen two Sensor temp 2" <tempmperature> (FF_Kitchen, gHeating) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_kitchen_floor_heating_two:sensor_temperature2" }
-Number:Temperature FF_Kitchen_Heating_floor_two_Sensor_temperature3 "Floor kitchen two Sensor temp 3" <tempmperature> (FF_Kitchen, gHeating) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_kitchen_floor_heating_two:sensor_temperature3" }
+// alway zero - remove
+// Number:Temperature FF_Kitchen_Heating_floor_two_Sensor_temperature3 "Floor kitchen two Sensor temp 3" <tempmperature> (FF_Kitchen, gHeating) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_kitchen_floor_heating_two:sensor_temperature3" }
 Number:Temperature FF_Kitchen_Heating_floor_two_Sensor_temperature4 "Floor kitchen two Sensor temp 4" <tempmperature> (FF_Kitchen, gHeating) {channel="zwave:thermofloor_ztrm3_00_000:controller:heatit-ff_kitchen_floor_heating_two:sensor_temperature4" }
 
 // Thing -
