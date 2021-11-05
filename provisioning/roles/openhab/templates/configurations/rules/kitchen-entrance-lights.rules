@@ -1,14 +1,20 @@
-rule "entrance-light-on"
+// The dimmer does not send command on/off
+// but only changes from the value (0-100)
+// This rule will send ON when the dimmer
+// is dimmed all the way up, and OFF when
+// it is turned down to 0
+
+rule "FF_KitchenEntrance-light-on"
 when
     Item FF_Kitchen_bench_dimmer1 changed to "100"
 then
-    FF_Kitchen_entrance_lights_dimmer1.sendCommand("100")
+    FF_Kitchen_entrance_lights_dimmer1.sendCommand(ON)
 end
 
-rule "entrance-light-off"
+rule "FF_KitchenEntrance-light-off"
 when
     Item FF_Kitchen_bench_dimmer1 changed to "0"
 then
-    FF_Kitchen_entrance_lights_dimmer1.sendCommand("0")
+    FF_Kitchen_entrance_lights_dimmer1.sendCommand(OFF)
 end
 
