@@ -48,6 +48,7 @@
   with_items:
     - default.rules
     - kitchen-entrance-lights.rules
+    - precence.rules
 
 - name: Copy services scripts
   template:

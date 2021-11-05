@@ -47,7 +47,7 @@ Group    OU_Porch                       "Porch"            <porch>              
 //
 
 Group   Network                         "Network"          <network>           (Home)                              ["NetworkAppliance"]
-Group   Phone                           "Phones"           <phone>              (Home, Network)                    ["Smartphone", "Presence"]
+Group   Phones                           "Phones"           <phone>              (Home, Network)                    ["Smartphone", "Presence"]
 
 
 

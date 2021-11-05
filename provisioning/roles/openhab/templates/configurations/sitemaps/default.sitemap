@@ -46,7 +46,7 @@ sitemap default label="GV12" {
 
     Frame {
 
-        Group item=Phone
+        Group item=Phones
 
         Text label="Lys" icon="light" {
             Default item=C_Office_Light label="Office"

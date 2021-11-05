@@ -3,5 +3,5 @@
 Switch Network_Gateway "Gateway"  (Network, C_TechnicalRoom) { channel="network:pingdevice:gateway:online" }
 
 // Mobile precence
-Switch Presence_Mobile_S "{{person_1}} mobil online" <network> (Phones) { channel="network:pingdevice:192_168_10_111:online" }
-Switch Presence_Mobile_Ingunn "{{person_2}} mobil online" <network> (Phones) { channel="network:pingdevice:192_168_10_124:online" }
+Switch Mobile_S_Online "{{person_1}} mobil online" <smartphone> (Phones) ["Precence", "Smartphone"] { channel="network:pingdevice:mobile_s:online" }
+// Switch Presence_Mobile_I "{{person_2}} mobil online" <smartphone> (Phones) ["Precence", "Smartphone"] { channel="network:pingdevice:192_168_10_124:online" }

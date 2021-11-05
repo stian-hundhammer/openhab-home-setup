@@ -1,0 +1,9 @@
+rule "Mobile_S_Online-on"
+when Item Mobile_S_Online changed to ON
+then FF_LivingRoom_LightSwitch.sendCommand(ON)
+end
+
+rule "Mobile_S_Online-off"
+when Item Mobile_S_Online changed to OFF
+then FF_LivingRoom_LightSwitch.sendCommand(OFF)
+end
