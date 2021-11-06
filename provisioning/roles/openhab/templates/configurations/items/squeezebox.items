@@ -1,0 +1,23 @@
+//
+// server
+//
+
+// how to get these data?
+String C_TechnicalRoom_SqueezeboxServer_FavoritesList "Favorites" (C_TechnicalRoom) { channel = "squeezebox:squeezeboxserver:server:favoritesList" }
+
+// can I crete group here??
+Group gFF_Livingroom_Squeezebox  "Stue Squeezebox" (gSqueezebox, FF_LivingRoom)
+// FF_Livingroom player
+
+Switch FF_LivingRoom_Squeezebox_Power    "Power" (gFF_Livingroom_Squeezebox)  {channel="squeezebox:squeezeboxplayer:server:FF_LivingRoom_Squeezebox:power"}
+Dimmer FF_LivingRoom_Squeezebox_Volume   "Volume" (gFF_Livingroom_Squeezebox) {channel="squeezebox:squeezeboxplayer:server:FF_LivingRoom_Squeezebox:volume"}
+Image  FF_LivingRoom_Squeezebox_AlbumArt "Cover"  (gFF_Livingroom_Squeezebox) {channel="squeezebox:squeezeboxplayer:server:FF_LivingRoom_Squeezebox:coverartdata"}
+Player FF_LivingRoom_Squeezebox_Control  "Control" (gFF_Livingroom_Squeezebox) {channel="squeezebox:squeezeboxplayer:server:FF_LivingRoom_Squeezebox:control"}
+String FF_LivingRoom_Squeezebox_Title  "Title" (gFF_Livingroom_Squeezebox) {channel="squeezebox:squeezeboxplayer:server:FF_LivingRoom_Squeezebox:title"}
+String FF_LivingRoom_Squeezebox_Album  "Title" (gFF_Livingroom_Squeezebox) {channel="squeezebox:squeezeboxplayer:server:FF_LivingRoom_Squeezebox:album"}
+String FF_LivingRoom_Squeezebox_Artist  "Title" (gFF_Livingroom_Squeezebox) {channel="squeezebox:squeezeboxplayer:server:FF_LivingRoom_Squeezebox:artist"}
+String FF_LivingRoom_Squeezebox_Year  "Year" (gFF_Livingroom_Squeezebox) {channel="squeezebox:squeezeboxplayer:server:FF_LivingRoom_Squeezebox:year"}
+String FF_LivingRoom_Squeezebox_Genre  "Genre" (gFF_Livingroom_Squeezebox) {channel="squeezebox:squeezeboxplayer:server:FF_LivingRoom_Squeezebox:genre"}
+String FF_LivingRoom_Squeezebox_Stream  "Stream" (gFF_Livingroom_Squeezebox) {channel="squeezebox:squeezeboxplayer:server:FF_LivingRoom_Squeezebox:stream"}
+String FF_LivingRoom_Squeezebox_Source  "Source" (gFF_Livingroom_Squeezebox) {channel="squeezebox:squeezeboxplayer:server:FF_LivingRoom_Squeezebox:source"}
+

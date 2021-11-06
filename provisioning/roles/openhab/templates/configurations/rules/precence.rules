@@ -7,3 +7,8 @@ rule "Mobile_S_Online-off"
 when Item Mobile_S_Online changed to OFF
 then FF_LivingRoom_LightSwitch.sendCommand(OFF)
 end
+
+rule "Shout"
+when Item Mobile_S_Online changed to ON
+then FF_LivingRoom_Squeezebox_Stream.sendCommand("{{precence_enter_person1}}")
+end

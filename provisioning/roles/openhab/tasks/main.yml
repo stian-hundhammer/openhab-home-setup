@@ -29,6 +29,7 @@
   - network.items
   - zwave.items
   - the-button.items
+  - squeezebox.items
 
 - name: Copy sitemaps scripts
   template:
