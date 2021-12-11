@@ -1,0 +1,63 @@
+#
+# main config file for openhab
+#
+#
+# copy scripts in place
+#
+
+- name: Copy things scripts
+  template:
+    src:  configurations/things/{{ item }}
+    dest: "{{ openhab_conf }}/things/{{ item }}"
+    owner: openhab
+    group: openhab
+  with_items:
+    - millheat.things
+    - network.things
+    - squeezebox.things
+    - zwave.things
+
+- name: Copy items scripts
+  template:
+    src:  configurations/items/{{ item }}
+    dest: "{{ openhab_conf }}/items/{{ item }}"
+    owner: openhab
+    group: openhab
+  with_items:
+  - default.items
+  - millheat.items
+  - network.items
+  - zwave.items
+  - the-button.items
+  - squeezebox.items
+
+- name: Copy sitemaps scripts
+  template:
+    src:  configurations/sitemaps/{{ item }}
+    dest: "{{ openhab_conf }}/sitemaps/{{ item }}"
+    owner: openhab
+    group: openhab
+  with_items:
+  - default.sitemap
+
+- name: Copy rules scripts
+  template:
+    src:  configurations/rules/{{ item }}
+    dest: "{{ openhab_conf }}/rules/{{ item }}"
+    owner: openhab
+    group: openhab
+  with_items:
+    - default.rules
+    - kitchen-entrance-lights.rules
+    - precence.rules
+
+- name: Copy services scripts
+  template:
+    src:  configurations/services/{{ item }}
+    dest: "{{ openhab_conf }}/services/{{ item }}"
+    owner: openhab
+    group: openhab
+  with_items:
+    - addons.cfg
+    - rrd4j.cfg
+    - runtime.cfg

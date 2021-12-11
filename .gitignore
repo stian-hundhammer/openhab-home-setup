@@ -1,7 +1,6 @@
 .gitsecret/keys/random_seed
 !*.secret
-*./group_vars/all
-provisioning/group_vars/all
+**/group_vars/all
 
 .idea
 *.iml
