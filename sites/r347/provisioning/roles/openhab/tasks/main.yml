@@ -12,9 +12,6 @@
     owner: openhab
     group: openhab
   with_items:
-    - millheat.things
-    - network.things
-    - squeezebox.things
     - zwave.things
 
 - name: Copy items scripts
@@ -25,11 +22,8 @@
     group: openhab
   with_items:
   - default.items
-  - millheat.items
-  - network.items
   - zwave.items
-  - the-button.items
-  - squeezebox.items
+
 
 - name: Copy sitemaps scripts
   template:

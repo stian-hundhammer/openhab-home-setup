@@ -1,0 +1,5 @@
+Bridge zwave:serial_zstick:controller "ZWave Controller" [ port="/dev/ttyACM0", controller_softreset="false", controller_master="true", heal_enable="true" ]
+ {
+    // , security_networkkey="{{zwave_controller_security_network_key}}"
+    // aeotec_zw175_00_000 aeotec-smart-switch-one "Smart Switch One" [ node_id=2 ]
+ }
