@@ -79,6 +79,8 @@ sitemap default label="GV12" {
             Default item=Presence_Mobile_Person1 label="{{person_1}}"
             Default item=Presence_Mobile_Person2 label="{{person_2}}"
         }
+
+        Group item=gSqueezebox label="Squeezebox"
     }
 
 }

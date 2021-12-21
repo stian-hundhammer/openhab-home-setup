@@ -6,7 +6,7 @@
 String C_TechnicalRoom_SqueezeboxServer_FavoritesList "Favorites" (C_TechnicalRoom) { channel = "squeezebox:squeezeboxserver:server:favoritesList" }
 
 // can I crete group here??
-Group gFF_Livingroom_Squeezebox  "Stue Squeezebox" (gSqueezebox, FF_LivingRoom)
+Group gFF_Livingroom_Squeezebox "Stue Squeezebox" <squeezebox_gray> (gSqueezebox, FF_LivingRoom)
 // FF_Livingroom player
 
 Switch FF_LivingRoom_Squeezebox_Power    "Power" (gFF_Livingroom_Squeezebox)  {channel="squeezebox:squeezeboxplayer:server:FF_LivingRoom_Squeezebox:power"}
@@ -22,7 +22,7 @@ String FF_LivingRoom_Squeezebox_Stream  "Stream" (gFF_Livingroom_Squeezebox) {ch
 String FF_LivingRoom_Squeezebox_Source  "Source" (gFF_Livingroom_Squeezebox) {channel="squeezebox:squeezeboxplayer:server:FF_LivingRoom_Squeezebox:source"}
 
 // Squeezebox in bedroom a
-Group gF2_Bedroom_a_Squeezebox "{{person_3}} Squeezebox" (gSqueezebox, F2_Bedroom_A)
+Group gF2_Bedroom_a_Squeezebox "{{person_3}} Squeezebox" <squeezebox_gray> (gSqueezebox, F2_Bedroom_A)
 Switch F2_Bedroom_a_Squeezebox_Power    "Power" (gF2_Bedroom_a_Squeezebox)  {channel="squeezebox:squeezeboxplayer:server:F2_Bedroom_A_Squeezebox:power"}
 Dimmer F2_Bedroom_a_Squeezebox_Volume   "Volume" (gF2_Bedroom_a_Squeezebox) {channel="squeezebox:squeezeboxplayer:server:F2_Bedroom_A_Squeezebox:volume"}
 Image  F2_Bedroom_a_Squeezebox_AlbumArt "Cover"  (gF2_Bedroom_a_Squeezebox) {channel="squeezebox:squeezeboxplayer:server:F2_Bedroom_A_Squeezebox:coverartdata"}

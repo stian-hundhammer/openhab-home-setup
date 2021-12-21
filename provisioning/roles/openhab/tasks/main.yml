@@ -61,3 +61,14 @@
     - addons.cfg
     - rrd4j.cfg
     - runtime.cfg
+
+## this fails  -  must be a way to move * binary files ..
+##- name: Copy icons
+##  template:
+##    src: configurations/icons/classic/{{ item }}
+##    dest: "{{ openhab_conf }}/icons/classic/{{ item }}"
+##    owner: openhab
+##    group: openhab
+##  with_items:
+##    - squeezebox_gray.png
+##
