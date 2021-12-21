@@ -1,3 +1,4 @@
 Bridge squeezebox:squeezeboxserver:server [ ipAddress="192.168.10.10", webport=9000 ] {
-    Thing squeezeboxplayer FF_LivingRoom_Squeezebox[ mac="00:04:20:22:ac:b5" ]
+    Thing squeezeboxplayer FF_LivingRoom_Squeezebox[ mac="{{squeezebox_room_ff_livingroom_mac}}" ]
+    Thing squeezeboxplayer F2_Bedroom_A_Squeezebox[ mac="{{squeezebox_room_2f_bedroom_a_mac}}" ]
 }
