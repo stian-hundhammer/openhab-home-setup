@@ -35,3 +35,16 @@ String F2_Bedroom_a_Squeezebox_Genre  "Genre" (gF2_Bedroom_a_Squeezebox) {channe
 String F2_Bedroom_a_Squeezebox_Stream  "Stream" (gF2_Bedroom_a_Squeezebox) {channel="squeezebox:squeezeboxplayer:server:F2_Bedroom_A_Squeezebox:stream"}
 String F2_Bedroom_a_Squeezebox_Source  "Source" (gF2_Bedroom_a_Squeezebox) {channel="squeezebox:squeezeboxplayer:server:F2_Bedroom_A_Squeezebox:source"}
 
+// Squeezebox in bedrom r
+Group gF2_Bedroom_r_Squeezebox "{{person_4}} Squeezebox" <squeezebox_gray> (gSqueezebox, F2_Bedroom_R)
+Switch F2_Bedroom_r_Squeezebox_Power    "Power" (gF2_Bedroom_r_Squeezebox)  {channel="squeezebox:squeezeboxplayer:server:F2_Bedroom_R_Squeezebox:power"}
+Dimmer F2_Bedroom_r_Squeezebox_Volume   "Volume" (gF2_Bedroom_r_Squeezebox) {channel="squeezebox:squeezeboxplayer:server:F2_Bedroom_R_Squeezebox:volume"}
+Image  F2_Bedroom_r_Squeezebox_AlbumArt "Cover"  (gF2_Bedroom_r_Squeezebox) {channel="squeezebox:squeezeboxplayer:server:F2_Bedroom_R_Squeezebox:coverartdata"}
+Player F2_Bedroom_r_Squeezebox_Control  "Control" (gF2_Bedroom_r_Squeezebox) {channel="squeezebox:squeezeboxplayer:server:F2_Bedroom_R_Squeezebox:control"}
+String F2_Bedroom_r_Squeezebox_Title  "Title" (gF2_Bedroom_r_Squeezebox) {channel="squeezebox:squeezeboxplayer:server:F2_Bedroom_R_Squeezebox:title"}
+String F2_Bedroom_r_Squeezebox_Album  "Title" (gF2_Bedroom_r_Squeezebox) {channel="squeezebox:squeezeboxplayer:server:F2_Bedroom_R_Squeezebox:album"}
+String F2_Bedroom_r_Squeezebox_Artist  "Title" (gF2_Bedroom_r_Squeezebox) {channel="squeezebox:squeezeboxplayer:server:F2_Bedroom_R_Squeezebox:artist"}
+String F2_Bedroom_r_Squeezebox_Year  "Year" (gF2_Bedroom_r_Squeezebox) {channel="squeezebox:squeezeboxplayer:server:F2_Bedroom_R_Squeezebox:year"}
+String F2_Bedroom_r_Squeezebox_Genre  "Genre" (gF2_Bedroom_r_Squeezebox) {channel="squeezebox:squeezeboxplayer:server:F2_Bedroom_R_Squeezebox:genre"}
+String F2_Bedroom_r_Squeezebox_Stream  "Stream" (gF2_Bedroom_r_Squeezebox) {channel="squeezebox:squeezeboxplayer:server:F2_Bedroom_R_Squeezebox:stream"}
+String F2_Bedroom_r_Squeezebox_Source  "Source" (gF2_Bedroom_r_Squeezebox) {channel="squeezebox:squeezeboxplayer:server:F2_Bedroom_R_Squeezebox:source"}
