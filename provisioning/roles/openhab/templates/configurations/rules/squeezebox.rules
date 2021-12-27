@@ -1,0 +1,6 @@
+// turn of player when time is due
+
+rule "Squeezebox_good_night"
+when Time cron "0 0 19 * * ?"
+then F2_Bedroom_r_Squeezebox_Power.sendCommand(OFF)
+end

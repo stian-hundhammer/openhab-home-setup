@@ -50,6 +50,7 @@
     - default.rules
     - kitchen-entrance-lights.rules
     - precence.rules
+    - squeezebox.rules
 
 - name: Copy services scripts
   template:
