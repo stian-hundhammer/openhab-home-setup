@@ -5,8 +5,10 @@
     Thing fibaro_fgpb101_00_000 the-button "The Button" [ node_id=3 ]
 
     // Smart switch , Aeotech Smart Switch 7
-    // Thing aeotec_zw175_00_000 smart-switch-one "Smart Switch One" [ node_id=4 ]
-    aeotec_zw175_00_000 aeotec-smart-switch-one "Smart Switch One" [ node_id=4 ]
+    aeotec_zw175_00_000 aeotec-smart-switch-one "Smart Switch One" [ node_id=11, config_8_1=3 ]
+
+    // Motion sensor, Aeotec TriSensor
+    aeotec_zwa005_00_000 aeotec-trisensor-one "TriSensor One" [ node_id=12 ]
 
     //
     // Heatit thermostats

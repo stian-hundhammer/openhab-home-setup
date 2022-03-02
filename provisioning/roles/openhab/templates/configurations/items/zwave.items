@@ -4,8 +4,14 @@
 
 // Thing: aeotec-smart-switch-one
 
-Switch FF_LivingRoom_LightSwitch "Light" <light> (FF_LivingRoom, gLight) { channel = "zwave:aeotec_zw175_00_000:controller:aeotec-smart-switch-one:switch_binary" }
+Switch movement_light "Movement Light" <light> (gLight) { channel = "zwave:aeotec_zw175_00_000:controller:aeotec-smart-switch-one:switch_binary" }
+Switch movement_alarm "Movement Alarm"  { channel="zwave:aeotec_zw175_00_000:controller:aeotec-smart-switch-one:alarm_system" }
 
+// Thing: aeotec-trisensor-one
+Switch trisensor_one_movement "TriSensor One Movement" { channel="zwave:aeotec_zwa005_00_000:controller:aeotec-trisensor-one:alarm_motion" }
+Number:Temperature trisensor_one_temp "TriSensor One Temp" <tempmperature>  { channel="zwave:aeotec_zwa005_00_000:controller:aeotec-trisensor-one:sensor_temperature" }
+Number trisensor_one_luminance "TriSensor One Luminance" { channel="zwave:aeotec_zwa005_00_000:controller:aeotec-trisensor-one:sensor_luminance" }
+Number trisensor_one_battery "TriSensor One Battery" { channel="zwave:aeotec_zwa005_00_000:controller:aeotec-trisensor-one:battery-level" }
 
 // thermofloor_ztrm3_00_000
 // https://www.openhab.org/addons/bindings/zwave/thing.html?thingTypeUID=thermofloor_ztrm3_00_000
