@@ -9,6 +9,7 @@
 
     // Motion sensor, Aeotec TriSensor
     aeotec_zwa005_00_000 aeotec-trisensor-one "TriSensor One" [ node_id=12 ]
+    aeotec_zwa005_00_000 aeotec-trisensor-two "TriSensor Two" [ node_id=13 ]
 
     //
     // Heatit thermostats

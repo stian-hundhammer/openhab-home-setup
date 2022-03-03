@@ -13,6 +13,12 @@ Number:Temperature trisensor_one_temp "TriSensor One Temp" <tempmperature>  { ch
 Number trisensor_one_luminance "TriSensor One Luminance" { channel="zwave:aeotec_zwa005_00_000:controller:aeotec-trisensor-one:sensor_luminance" }
 Number trisensor_one_battery "TriSensor One Battery" { channel="zwave:aeotec_zwa005_00_000:controller:aeotec-trisensor-one:battery-level" }
 
+// Thing: aeotec-trisensor-two
+Switch trisensor_two_movement "TriSensor Two Movement" { channel="zwave:aeotec_zwa005_00_000:controller:aeotec-trisensor-two:alarm_motion" }
+Number:Temperature trisensor_two_temp "TriSensor Two Temp" <tempmperature>  { channel="zwave:aeotec_zwa005_00_000:controller:aeotec-trisensor-two:sensor_temperature" }
+Number trisensor_two_luminance "TriSensor Two Luminance" { channel="zwave:aeotec_zwa005_00_000:controller:aeotec-trisensor-two:sensor_luminance" }
+Number trisensor_two_battery "TriSensor Two Battery" { channel="zwave:aeotec_zwa005_00_000:controller:aeotec-trisensor-two:battery-level" }
+
 // thermofloor_ztrm3_00_000
 // https://www.openhab.org/addons/bindings/zwave/thing.html?thingTypeUID=thermofloor_ztrm3_00_000
 // https://opensmarthouse.org/zwavedatabase/1238
