@@ -51,6 +51,7 @@
     - kitchen-entrance-lights.rules
     - precence.rules
     - squeezebox.rules
+    - movement.rules
 
 - name: Copy services scripts
   template:

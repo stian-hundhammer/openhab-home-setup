@@ -1,0 +1,20 @@
+rule "Lights-on-movement-one"
+when Item trisensor_one_movement changed to ON
+then movement_light.sendCommand(ON)
+end
+
+rule "Lights-on-movement-two"
+when Item trisensor_two_movement changed to ON
+then movement_light.sendCommand(ON)
+end
+
+
+rule "Lights-off-movement-one"
+when Item trisensor_one_movement changed to OFF
+then movement_light.sendCommand(OFF)
+end
+
+rule "Lights-off-movement-two"
+when Item trisensor_two_movement changed to OFF
+then movement_light.sendCommand(OFF)
+end
